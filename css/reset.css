@@ -57,3 +57,19 @@
     opacity: 0.3;
     z-index: -1;
   }
+  header{
+margin-bottom: 2rem;
+text-align: center;
+}
+  h1 {
+    font-size: 1.8rem;
+font-weight: 600;
+margin-bottom: 0.5rem;
+color: var(--text-primary);
+
+}
+.subtittle{
+  color: var(--text-secundary);
+  font-size: 0.95rem;
+
+}
