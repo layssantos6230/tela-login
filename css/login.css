@@ -1,65 +1,75 @@
-.Login-container{
-background-color: var(--card-bg);
-width: 100;
-max-width: 420px;
-border-radius: var(--border-radius);
-padding: 2.5rem;
-position: relative;
-overflow: hidden;
+
+
+.login-container {
+  background-color: var(--card-bg);
+  width: 100%;
+  max-width: 420px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-container ::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary-color), #9c88ff);
+}
+
+header {
+  margin-bottom: 1.8rem;
+  text-align: center;
 
 }
 
-.Login-container::before{
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 100;
-height: 5px;
-background: linear-gradient(90deg, var (--primary-color),#9c88ff);
+h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-primry);
 
-} 
- header{
-    margin-bottom: 2rem;
-    text-align: center;
-    }
-      h1 {
-        font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-    
-    }
-    .subtittle{
-      color: var(--text-secundary);
-      font-size: 0.95rem;
-    
-    }
-    .from-group {
-    margin-bottom: 1.5rem;
-    position: relative;
-    }
-    
-    label {
-        display: flex;
-        margin-bottom: 0.5rem;
-        color: var(--text-primary);
-        font-size: 0.9rem;
-        font-weight: 500;
+}
+
+.subtitle {
+  color: var(--text-secundary);
+  font-size: 0.95rem;
+}
+
+.form-group {
+  margin-bottom: 1, 5rem;
+  position: relative;
+
+}
+
+label {
+  display: flex;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .input-group {
-    width: 100;
-    padding: 1rem;
-    background-color: var(--input-br);
-    border: 1px solid rgb(255, 255, 255, 0.1);
-    border-radius: var(--border-radius);
-    color: var(--text-primary);
-    font-size: 1rem;
-    transition: var(--transition);
-    
+  position: relative;
 }
-input:focus{
+
+input {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--input-bg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: var(--text-primary);
+  font: size 1rem;
+  transition: var(--transition);
+}
+
+input:focus {
   outline: none;
   border-color: var(--primary-color);
   box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
@@ -69,79 +79,68 @@ input::placeholder {
   color: var(--text-secundary);
   opacity: 0.7;
 }
-.forgot-passaword {
+
+.forgot-password {
   text-align: right;
   margin-top: 0.5rem;
 
 }
 
-.forgot-passaword a { 
-     color: var(--text-secundary);
-     font-size: 0.85rem;
-     text-decoration: none;
-     transition: var(--transition);
-
+.forgot-password a {
+  color: var(--text-secundary);
+  font-size: 0.85rem;
+  text-decoration: none;
+  trasition: var (--transition);
 }
 
-.forgot-passaword a:houver {
-
+.forgot-password a:houver {
   color: var(--primary-color);
 }
 
 .options {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-  
-}
-
-.remember-me {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
 
 }
 
-.remember-me input {
-    width: auto;
-    margin-right: 0.5rem;
-    accent-color: var(--primary-color);
-
+.remenber-me {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-.remember-me label {
-   margin-bottom: 0;
-   font-size: 0.85rem;
-   cursor: pointer;
+.remenber-me input {
+  width: auto;
+  margin-right: 0.5rem;
+  accent-color: var(--primary-color);
+}
 
-  }
-
-button {
-width: 100;
-padding: 1rem;
-background-color: var(--primary-color);
-color: white;
-border: none;
-border-radius: var(--border-radius);
-font-size: 1rem;
-font-weight: 600;
+.remenber-me label {
+  margin-bottom: 0;
+  font-size: 0.85rem;
 cursor: pointer;
-transition: all 0.4s ease;
-display: flex;
-justify-content: center;
-align-items: center;
-
-}    
-
-button:houver {
-    background-color: var(--primary-houver);
-    transform: translateY(-2px);
 }
-
-
-button:active {
+button{
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button:hover{
+background-color: var(--primary-hover);
+transform: translateY(-2px);
+}
+button:active{
   transform: translateY(0);
-
 }
-    
