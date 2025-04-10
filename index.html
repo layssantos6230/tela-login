@@ -1,69 +1,62 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+!DOCTYPE html>
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="descripttion" content = "Pagina de Login segura e elegante">
-    <meta name=" descripttion"content = "login, acesso, segurança, conta">
-    <title> login | Minha Plataforma</title>
-    <link rel="stylesheet" href="css/style.css" >
-    <meta name="viewport" content="width=device-width, 
-    initial-scale=1.0">
-
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripition" content="Página de login segura e elegante">
+    <meta name="keywords" content="login, acesso, segurança, conta">
+    <title>Login | Minha Plataforma</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<main class="login-continer">
-           <header>
-             <h1>Bem-vindo</h1>
-               <p class ="subtitle">Entre com suas credenciais para acessar</p>
-                <form action="/login" method="POST" >
-                    <div class="input-group"> 
-                        <input type="email" id="email" name="email" placeholder="Seu email ou nome de usuario" required outofocus>
-                        
-                        
-          </header>
+    <main class="login-container">
+        <header>
+            <h1>Bem Vindo</h1>
+            <p class=" subtitle">Entre com suas credenciais para acessar</p>
+        </header>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="email">Email ou Usuário</label>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder="Seu email ou nome de usuario" required
+                        autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" placeholder="Senha" required>
+                    </div>
+                </div>
+                <div class="forgot-password">
+                    <a href="/recuperar-senha">Esqueceu sua senha?</a>
+                </div>
             </div>
-          </form>
-
-</main>
-    
-</body>
-
-<body>
- 
-  </div>
-     <div class="forgot-password">
-     <a href="/recuperar-senha">Esqueceu sua senha?</a>
-  </div>
-</form>
-
-  </main>
-</body>
-
-<html long="pt-br">
-  <body>
-    <main class="login-continer">
-      <form action="/login" method="POST">
-        <div class="options">
-          <div class="remember-me">
-            <input type="checkbox" id="remeber" name="remeber">
-            <label for="remeber">Lembrar-me</label>
-
+            <div class="options">
+                <div class="remeber-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Lembrar-me</label>
+                </div>
+            </div>
             <button type="submit">Entrar</button>
-<div class="divider">
-  <span>Ou continue com</span>
-</div>
-<div class="social login">
-  <a href="#" class="social-btn" aria-label="Entrar com google">G</a>
-  <a href="#" class="social-btn" aria-label="Entrar com Facebook">F</a>
-  <a href="#" class="social-btn" aria-label="Entar com Apple">A</a>
-</div>
-<div class="singup link">
-  Não tem uma conta? <a href="/cadastro">Criar contas</a>
-</div>
-          </div>
+
+        </form>
+
+        <div class="divider">
+            <span>Ou continue com</span>
         </div>
-      </form>
+
+        <div class="social-login">
+            <a href="#" class="social-btn" aria-label="Entrar como google">G</a>
+            <a href="#" class="social-btn" aria-label="Entrar como facebook">F</a>
+            <a href="#" class="social-btn" aria-label="Entrar como Apple">A</a>
+        </div>
+        <div class="dignup-link">
+            Não tem conta? <a href="cadastro">Criar conta</a>
+
+        </div>
     </main>
-  </body> 
+</body>
+
 </html>
