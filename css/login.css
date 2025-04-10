@@ -90,7 +90,7 @@ input::placeholder {
   color: var(--text-secundary);
   font-size: 0.85rem;
   text-decoration: none;
-  trasition: var (--transition);
+  transition: var (--transition);
 }
 
 .forgot-password a:houver {
@@ -144,3 +144,73 @@ transform: translateY(-2px);
 button:active{
   transform: translateY(0);
 }
+
+.divider { 
+  display: flex;
+  align-items: center;
+  margin: 1.5rem;
+
+}
+
+.divider::before
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.divider span {
+  padding:0.2rem ;
+  color: var(--text-secundary);
+  font-size: 0.85rem;
+}
+
+.social-login {
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+   margin-bottom: 1.5rem;
+
+}
+
+.social-btn {
+  color: var(--text-primary);
+  text-decoration: none ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 48px;
+   height: 48px;
+   border-radius: 50;
+   background-color: var(--input-bg);
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   cursor: pointer;
+   transition: var(--transition);
+
+}
+
+.social-btn:houver {
+   background-color: rgba(255, 255, 255, 0.5);
+   transform: translateY(-5px);
+
+
+}
+
+
+.singup-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--text-secundary);
+  font-size: 0.9rem;
+
+}
+
+.singup-link a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+
+}
+ 
