@@ -213,4 +213,8 @@ button:active{
   transition: var(--transition);
 
 }
- 
+
+.singup-link a:houver {
+  text-decoration: underline;
+
+} 
